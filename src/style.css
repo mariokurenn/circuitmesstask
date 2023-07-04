@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-center-title-child{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 50px;
+    color: #191919;
+    font-size: 30px !important;
+    line-height: 1em;
+}
+.layout-wrapper{
+    max-width: 1160px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.width-wrapper{
+    width: calc(100% + 0px);
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.card{
+    width: calc(33.333333333333336% - 20px);
+    min-height: 582px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 24px;
+    box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.5);
+}
+.card-content{
+    z-index: 4;
+    position: relative;
+    min-height: 700px;
+}
+.card-image img{
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 265px;
+    border-radius: 24px 24px 0px 0px 
+}
+.card-rest{
+    flex-grow: 1;
+}
+.card-text-content{
+    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+}
+.product-basic-info{
+    margin-bottom: 10px;
+    min-height: 140px;
+    background: white;
+    font-family: Poppins;
+}
+.product-basic-info .title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.product-basic-info .description{
+    margin: 0 0 19.44444px;
+    font-size: 15px;
+    font-weight: 600;
+    overflow-wrap: break-word;
+    color:#191919;
+}
+.product-basic-info .description-second{
+    margin: 0 0 19.44444px;
+    font-size: 15px;
+    font-weight: 600;
+    overflow-wrap: break-word;
+    color:#191919;
+}
+.product-basic-info .price{
+    font-size: 30px;
+}
+.flex-parent-button a:hover{
+    scale: 1.054;
+}
+.product-basic-info.spencer {
+    color: #e3384d;
+}
+.flex-parent-button.spencer a, .flex-parent-button.spencer .ages{
+    background-color:#e3384d;
+}
+.product-basic-info.stembox{
+    color: #0058E4 
+}
+.flex-parent-button.stembox a, .flex-parent-button.stembox .ages{
+    background-color:#0058E4;
+}
+.product-basic-info.clockstar{
+    color: #FEA700 
+}
+.flex-parent-button.clockstar a, .flex-parent-button.clockstar .ages{
+    background-color:#FEA700;
+}
+.product-basic-info.jayd {
+    color: #fed600;
+}
+.flex-parent-button.jayd a, .flex-parent-button.jayd .ages{
+    background-color:#fed600;
+}
+.product-basic-info.nibble {
+    color: #00bed6;
+}
+.flex-parent-button.nibble a, .flex-parent-button.nibble .ages{
+    background-color:#00bed6;
+}
+.spacing-2{
+    height: 55px;
+}
+.price.discount{
+    font-size: 31px;
+    text-decoration: line-through;
+    padding-right: 4px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.price.text-discount{
+    font-size: 18px;
+    font-weight: 500;
+}
+.spacing{
+    min-height: 125px;
+}
+.content{
+    max-height: 350px;
+}
+.flex-parent-button{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.flex-parent-button a{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 4545px;
+    display: inline-block;
+    transition: 0.16s;
+    text-decoration: none;
+}
+.button{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 4545px;
+    display: inline-block;
+    transition: 0.16s;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+    background-color: #e3384d;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ages{
+    display: inline-block;
+    padding: 6px 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 11px;
+    max-height: 48px;
+    margin: 0;
+    line-height: 18px;
+    font-weight: 600;
+}
+.flex-parent-button{
+    position: relative;
+    bottom: 0;
+}
+.ages p{
+    margin: 0;
+    padding: 0;
+}
+.ages span{
+    font-size: 18px;
+    font-weight: 700;
+}
+.button:hover{
+    scale: 1.054;
+    transition: 0.16s;
+    cursor: pointer;
+}
+@media (min-width: 780px) and (max-width: 991px){
+    .flex-parent-button a{
+        max-height: 45px;
+        font-size: 16px;
+        transition: 0.16s;
+   }
+}
+@media (max-width: 780px){
+    .card {
+        width: 100%;
+   }
+    .text-center-title-child{
+        font-size: 25px !important;
+   }
+    .layout-wrapper{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+   }
+    .card-image img{
+        min-height: unset;
+   }
+    .spacing{
+        min-height: 80px;
+   }
+    .spacing-2{
+        min-height: 70px;
+   }
+    .product-basic-info .description-second{
+        margin: 0 0 19.4444px;
+        font-size: 15px;
+        font-weight: 600;
+        overflow-wrap: break-word;
+   }
+}
+@media (max-width: 450px){
+    .flex-parent-button a{
+        max-height: 45px;
+        font-size: 14px;
+        transition: 0.16s;
+   }
+    .card-content {
+        z-index: 4;
+        position: relative;
+        min-height: unset;
+   }
+}
